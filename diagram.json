@@ -1,4 +1,5 @@
 {
+<<<<<<< HEAD
   "version": 1,
 <<<<<<< HEAD
   "author": "Anonymous maker",
@@ -52,3 +53,39 @@
   ],
   "dependencies": {}
 }
+=======
+    "version": 1,
+    "author": "Uri Shaked",
+    "editor": "wokwi",
+    "parts": [
+      { "type": "board-esp32-devkit-c-v4", "id": "esp", "top": 28.8, "left": 4.84, "attrs": {} },
+      {
+        "type": "wokwi-led",
+        "id": "led1",
+        "top": 178.8,
+        "left": 186.2,
+        "attrs": { "color": "red" }
+      },
+      {
+        "type": "wokwi-pushbutton",
+        "id": "btn1",
+        "top": 111.8,
+        "left": 326.4,
+        "attrs": { "color": "green", "xray": "1" }
+      },
+      { "type": "wokwi-relay-module", "id": "relay1", "top": -67, "left": 220.8, "attrs": {} }
+    ],
+    "connections": [
+      [ "esp:TX", "$serialMonitor:RX", "", [] ],
+      [ "esp:RX", "$serialMonitor:TX", "", [] ],
+      [ "relay1:VCC", "esp:3V3", "red", [ "h-220.8", "v96" ] ],
+      [ "relay1:GND", "esp:GND.2", "black", [ "h-124.8", "v86" ] ],
+      [ "relay1:IN", "esp:23", "green", [ "h-86.4", "v86.2" ] ],
+      [ "btn1:2.l", "esp:GND.2", "green", [ "h-76.8", "v-47.8" ] ],
+      [ "btn1:1.l", "esp:19", "green", [ "v9.6", "h-163.2" ] ],
+      [ "led1:C", "esp:GND.2", "green", [ "h-18.8", "v-163.2" ] ],
+      [ "led1:A", "esp:18", "green", [ "h19.2", "v-86.4", "h-124.8" ] ]
+    ],
+    "dependencies": {}
+  }
+>>>>>>> e80c019 (Proyek Minggu 3)
