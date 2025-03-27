@@ -7,7 +7,7 @@
     { "type": "wokwi-led", "id": "led1", "top": 15.6, "left": -178.6, "attrs": { "color": "red" } },
     { "type": "wokwi-led", "id": "led2", "top": 15.6, "left": -130.6, "attrs": { "color": "orange" } },
     { "type": "wokwi-led", "id": "led3", "top": 15.6, "left": -82.6, "attrs": { "color": "green" } },
-    { "type": "wokwi-dht22", "id": "dht1", "top": -57.3, "left": 4.2, "attrs": {} },
+    { "type": "wokwi-dht22", "id": "dht1", "top": -18.9, "left": 81, "attrs": {} },
     { "type": "wokwi-hc-sr04", "id": "ultrasonic1", "top": -8.1, "left": 72.7, "attrs": {} }
   ],
   "connections": [
@@ -19,9 +19,9 @@
     [ "led1:C", "esp:GND.1", "green", [ "v96", "h163.6" ] ],
     [ "led2:C", "esp:GND.1", "green", [ "v96", "h115.6" ] ],
     [ "led3:C", "esp:GND.1", "green", [ "v96", "h67.6" ] ],
-    [ "dht1:VCC", "esp:3V3", "red", [ "v19.2", "h115.2", "v-76.8" ] ],
-    [ "dht1:GND", "esp:GND.1", "black", [ "v99.7", "h-189.56", "v-66.38" ] ],
-    [ "esp:27", "dht1:SDA", "green", [ "h-172.65", "v-38.4" ] ],
+    [ "dht1:VCC", "esp:3V3", "red", [ "v9.6", "h57.6", "v-67.2" ] ],
+    [ "dht1:SDA", "esp:27", "green", [ "v38.4", "h115.3" ] ],
+    [ "dht1:GND", "esp:GND.1", "black", [ "v67.2", "h96" ] ],
     [ "ultrasonic1:VCC", "esp:5V", "red", [ "v144", "h-249.75" ] ],
     [ "ultrasonic1:GND", "esp:D0", "black", [ "v105.6", "h-183.6" ] ],
     [ "ultrasonic1:ECHO", "esp:18", "green", [ "v19.2", "h-173.6" ] ],
