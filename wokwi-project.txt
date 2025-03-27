@@ -1,3 +1,7 @@
+<<<<<<< HEAD
 Downloaded from https://wokwi.com/projects/423473803253208065
+=======
+Downloaded from https://wokwi.com/projects/322577683855704658
+>>>>>>> 620c919 (Proyek Minggu 2)
 
 Simulate this project on https://wokwi.com
