@@ -1,91 +1,31 @@
 {
-<<<<<<< HEAD
   "version": 1,
-<<<<<<< HEAD
-  "author": "Anonymous maker",
+  "author": "Assyfaul Khoiriyah",
   "editor": "wokwi",
   "parts": [
-    { "type": "board-esp32-devkit-c-v4", "id": "esp", "top": 0, "left": 0, "attrs": {} },
-    {
-      "type": "wokwi-led",
-      "id": "led1",
-      "top": 15.6,
-      "left": -178.6,
-      "attrs": { "color": "red" }
-    },
-    {
-      "type": "wokwi-led",
-      "id": "led2",
-      "top": 15.6,
-      "left": -130.6,
-      "attrs": { "color": "orange" }
-    },
-    {
-      "type": "wokwi-led",
-      "id": "led3",
-      "top": 15.6,
-      "left": -82.6,
-      "attrs": { "color": "green" }
-    }
-=======
-  "author": "vokasi",
-  "editor": "wokwi",
-  "parts": [
-    { "type": "board-esp32-devkit-c-v4", "id": "esp", "top": -28.8, "left": 196.84, "attrs": {} },
-    { "type": "wokwi-dht22", "id": "dht1", "top": -57.3, "left": 4.2, "attrs": {} }
->>>>>>> 620c919 (Proyek Minggu 2)
+    { "type": "board-esp32-devkit-c-v4", "id": "esp", "top": 0, "left": -110.36, "attrs": {} },
+    { "type": "wokwi-led", "id": "led1", "top": 15.6, "left": -178.6, "attrs": { "color": "red" } },
+    { "type": "wokwi-led", "id": "led2", "top": 15.6, "left": -130.6, "attrs": { "color": "orange" } },
+    { "type": "wokwi-led", "id": "led3", "top": 15.6, "left": -82.6, "attrs": { "color": "green" } },
+    { "type": "wokwi-dht22", "id": "dht1", "top": -57.3, "left": 4.2, "attrs": {} },
+    { "type": "wokwi-hc-sr04", "id": "ultrasonic1", "top": -8.1, "left": 72.7, "attrs": {} }
   ],
   "connections": [
     [ "esp:TX", "$serialMonitor:RX", "", [] ],
     [ "esp:RX", "$serialMonitor:TX", "", [] ],
-<<<<<<< HEAD
     [ "led3:A", "esp:25", "green", [ "v0" ] ],
     [ "led2:A", "esp:33", "green", [ "v38.4", "h105.6" ] ],
     [ "led1:A", "esp:32", "green", [ "v28.8", "h153.6" ] ],
     [ "led1:C", "esp:GND.1", "green", [ "v96", "h163.6" ] ],
     [ "led2:C", "esp:GND.1", "green", [ "v96", "h115.6" ] ],
-    [ "led3:C", "esp:GND.1", "green", [ "v96", "h67.6" ] ]
-=======
+    [ "led3:C", "esp:GND.1", "green", [ "v96", "h67.6" ] ],
     [ "dht1:VCC", "esp:3V3", "red", [ "v19.2", "h115.2", "v-76.8" ] ],
     [ "dht1:GND", "esp:GND.1", "black", [ "v99.7", "h-189.56", "v-66.38" ] ],
-    [ "esp:27", "dht1:SDA", "green", [ "h-172.65", "v-38.4" ] ]
->>>>>>> 620c919 (Proyek Minggu 2)
+    [ "esp:27", "dht1:SDA", "green", [ "h-172.65", "v-38.4" ] ],
+    [ "ultrasonic1:VCC", "esp:5V", "red", [ "v144", "h-249.75" ] ],
+    [ "ultrasonic1:GND", "esp:D0", "black", [ "v105.6", "h-183.6" ] ],
+    [ "ultrasonic1:ECHO", "esp:18", "green", [ "v19.2", "h-173.6" ] ],
+    [ "ultrasonic1:TRIG", "esp:5", "green", [ "v28.8", "h-163.6" ] ]
   ],
   "dependencies": {}
 }
-=======
-    "version": 1,
-    "author": "Uri Shaked",
-    "editor": "wokwi",
-    "parts": [
-      { "type": "board-esp32-devkit-c-v4", "id": "esp", "top": 28.8, "left": 4.84, "attrs": {} },
-      {
-        "type": "wokwi-led",
-        "id": "led1",
-        "top": 178.8,
-        "left": 186.2,
-        "attrs": { "color": "red" }
-      },
-      {
-        "type": "wokwi-pushbutton",
-        "id": "btn1",
-        "top": 111.8,
-        "left": 326.4,
-        "attrs": { "color": "green", "xray": "1" }
-      },
-      { "type": "wokwi-relay-module", "id": "relay1", "top": -67, "left": 220.8, "attrs": {} }
-    ],
-    "connections": [
-      [ "esp:TX", "$serialMonitor:RX", "", [] ],
-      [ "esp:RX", "$serialMonitor:TX", "", [] ],
-      [ "relay1:VCC", "esp:3V3", "red", [ "h-220.8", "v96" ] ],
-      [ "relay1:GND", "esp:GND.2", "black", [ "h-124.8", "v86" ] ],
-      [ "relay1:IN", "esp:23", "green", [ "h-86.4", "v86.2" ] ],
-      [ "btn1:2.l", "esp:GND.2", "green", [ "h-76.8", "v-47.8" ] ],
-      [ "btn1:1.l", "esp:19", "green", [ "v9.6", "h-163.2" ] ],
-      [ "led1:C", "esp:GND.2", "green", [ "h-18.8", "v-163.2" ] ],
-      [ "led1:A", "esp:18", "green", [ "h19.2", "v-86.4", "h-124.8" ] ]
-    ],
-    "dependencies": {}
-  }
->>>>>>> e80c019 (Proyek Minggu 3)
